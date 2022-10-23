@@ -1,0 +1,742 @@
+.body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(rgb(255, 247, 128), orange);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mainInfoSection {
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+#findMeThere {
+  font-size: large;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  padding-right: 40px;
+}
+
+.findMeThereBtn {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.findMeThereBtn:hover {
+  background-color: #ffd000;
+}
+
+.imgThere {
+  height: 30px;
+  width: auto;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_img {
+  margin-top: 0px;
+  height: 150px;
+}
+
+.ganreBtn {
+  height: 60px;
+  width: 180px;
+  border: 0;
+  font-size: large;
+  outline: none;
+  cursor: pointer;
+  background-color: #ffd000;
+  transition-duration: 1s;
+}
+
+.buttons_header {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+
+/* CARD */
+.titleForBook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.titleForBook {
+  font-size: 30px;
+  height: 30px;
+}
+
+.popList {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: wrap;
+  gap: 80px;
+}
+
+.cardBookItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: large;
+  padding: 20px;
+  border-radius: 15px;
+  transition-duration: 1s;
+}
+
+.cardBookItem:hover {
+  transition-duration: 1s;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px black;
+  transition-delay: 0.5s;
+}
+
+.bookCardImg {
+  height: 350px;
+  width: auto;
+}
+
+.cardBookName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  font-size: 25px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.cardWriterTitle {
+  margin: 0;
+  padding: 10px;
+}
+
+.cardVideoBtn {
+  width: 150px;
+  height: 50px;
+  font-size: large;
+  background-color: orange;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+.cardVideoBtn:hover {
+  background-color: #ff7b00;
+  transition-duration: 1s;
+}
+
+.ganreBtn:hover {
+  background-color: orange;
+  transition-duration: 1s;
+}
+/* CARD */
+
+.bookOfMonthUl {
+  height: auto;
+}
+
+.libraryBooksList {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: wrap;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+
+/* ToTOP */
+.toTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  background-color: #fdbe00;
+  bottom: 0px;
+  right: 50px;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 15px rgb(31, 31, 31);
+  transition-property: all;
+}
+
+.toTop:hover {
+  width: 80px;
+  height: 80px;
+  transition-duration: 0.5s;
+}
+
+.upImg:hover {
+  width: 55px;
+  height: auto;
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}
+
+.toTop.active {
+  bottom: 40px;
+  opacity: 1;
+  pointer-events: auto;
+  transition-duration: 0.5s;
+}
+
+.UpBtn {
+  background: none;
+  border: 0;
+}
+
+.upImg {
+  width: 45px;
+  height: auto;
+  padding: 12px;
+  transition-duration: 0.5s;
+}
+
+.line {
+  height: 2px;
+  background-color: black;
+  width: auto;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 30px;
+}
+
+#readedBooks {
+  margin-bottom: 40px;
+}
+
+.bookInProgresCardImg {
+  height: 500px;
+}
+.cardInProgressBookItemActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.inProgressInfo {
+  padding: 50px;
+}
+
+.cardBookInProgresName {
+  margin-top: 20px;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.cardInProgresWriterTitle {
+  font-size: 25px;
+}
+
+.inProgresAbout {
+  font-size: 18px;
+  color: black;
+}
+
+.sliderImgs {
+  width: auto;
+  height: 400px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  width: 80%;
+  height: fit-content;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #ff7b00;
+}
+
+.swiper {
+  cursor: pointer;
+}
+
+.swiper {
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 192, 31);
+  height: auto;
+}
+
+.footertext {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: large;
+}
+
+.textFooterall {
+  margin: 10px;
+}
+.footerBottons {
+  margin-top: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+#clearBtn {
+  background-color: rgb(255, 196, 0);
+  font-size: large;
+  height: 51px;
+  border: 0;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  cursor: pointer;
+}
+
+#shareBtn {
+  background-color: rgb(255, 196, 0);
+  font-size: large;
+  cursor: pointer;
+  width: 90px;
+  height: 51px;
+  border: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#searchInput {
+  outline: none;
+  background-color: white;
+  height: 45px;
+  width: 250px;
+  border: 2px solid rgb(255, 196, 0);
+  padding-left: 10px;
+  font-size: large;
+}
+
+#shareBtn:hover {
+  background-color: #ff9900;
+}
+
+.onlymainButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.outOfStock {
+  opacity: 0.7;
+  color: rgb(180, 0, 0);
+}
+.shereByСomb {
+  font-size: large;
+}
+
+@media screen and (max-width: 2621px) and (min-width: 1921px) {
+  .buttons_header {
+    padding-top: 50px;
+  }
+  .shereByСomb {
+    font-size: 29px;
+  }
+  .mainInfoSection {
+    width: auto;
+    height: auto;
+    background-color: white;
+  }
+  .buttons_header {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .sliderImgs {
+    height: auto;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+  .cardInProgressBookItemActive {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+  .bookCardImg {
+    width: 350px;
+    height: auto;
+  }
+  .cardBookName {
+    font-size: 35px;
+  }
+  .cardWriterTitle {
+    font-size: 30px;
+  }
+  .cardBookName {
+    width: auto;
+  }
+  .cardVideoBtn {
+    width: 200px;
+    height: 80px;
+    font-size: 27px;
+  }
+  .imgThere {
+    height: 50px;
+    width: auto;
+  }
+  .findMeThereBtn {
+    height: 60px;
+    height: 60px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .footerBottons {
+    gap: 50px;
+  }
+  .titleForBook {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .footer {
+    font-size: large;
+  }
+  .main_img {
+    width: 500px;
+    height: auto;
+  }
+  .topHeaderText {
+    font-size: 25px;
+  }
+  .footertext {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .toTop {
+    width: 100px;
+    height: 100px;
+    bottom: 30px;
+    right: 60px;
+  }
+  .upImg {
+    width: 70px;
+    height: auto;
+  }
+  .UpBtn {
+    font-size: large;
+  }
+  .bookInProgresCardImg {
+    width: 500px;
+    height: auto;
+  }
+  .inProgressInfo {
+    font-size: 40px;
+  }
+  .inProgresAbout {
+    font-size: 25px;
+  }
+  #readedBtnMain {
+    font-size: 25px;
+  }
+  #ureadedBtnMain {
+    font-size: 25px;
+  }
+  .ganreBtn {
+    width: auto;
+    height: auto;
+  }
+  #clearBtn {
+    height: 70px;
+    font-size: 25px;
+  }
+  #searchInput {
+    height: 64px;
+    width: 250px;
+    font-size: 25;
+  }
+  #shareBtn {
+    width: 120px;
+    height: 70px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 2450px) {
+  .cardInProgressBookItemActive {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+@media screen and (max-width: 2300px) {
+  .cardInProgressBookItemActive {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media screen and (max-width: 1750px) {
+  .mainInfoSection {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .toTop {
+    width: 70px;
+    height: 70px;
+    bottom: 0px;
+    right: 40px;
+  }
+  .onlymainButtons {
+    padding-top: 60px;
+    flex-direction: column;
+  }
+  .shereByСomb {
+    padding: 20px;
+  }
+  .cardInProgressBookItemActive {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mainInfoSection {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
+  }
+  .toTop {
+    width: 70px;
+    height: 70px;
+    bottom: 0px;
+    right: 40px;
+  }
+  .swiper {
+    width: 80%;
+    height: fit-content;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 300px;
+  }
+  .inProgresAbout {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0;
+  }
+  .topHeaderText {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  .sliderImgs {
+    height: auto;
+  }
+  .titleForBook {
+    margin-bottom: 10px;
+  }
+  .shereByСomb {
+    width: 450px;
+    height: auto;
+    padding-top: 70px;
+  }
+  .BookOfMonthDiv {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inProgressInfo {
+    padding: 30px;
+  }
+
+  .cardInProgressBookItemActive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainInfoSection {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
+  }
+  .toTop {
+    right: 30px;
+  }
+  #header {
+    padding-bottom: 30px;
+  }
+  #findMeThere {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .SliderSec {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  #header {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .shereByСomb {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cardBookItem:hover {
+    transition-duration: 1s;
+    transform: scale(1);
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+    transition-delay: 0.5s;
+  }
+
+  .BookOfMonthDiv {
+    padding-top: 80px;
+  }
+  .onlymainButtons {
+    padding-top: 80px;
+  }
+  .inProgressInfo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .bookOfMonthUl {
+    padding: 0;
+  }
+  .cardInProgressBookItemActive {
+    display: flex;
+    flex-direction: column;
+  }
+  .bookInProgresCardImg {
+    width: 250px;
+    height: auto;
+  }
+  .bookCardImg {
+    width: 200px;
+    height: auto;
+  }
+  #clearBtn {
+    height: 30px;
+    font-size: 15px;
+  }
+  #searchInput {
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+  }
+  #shareBtn {
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+  }
+  #readedBtnMain {
+    font-size: 15px;
+  }
+  #ureadedBtnMain {
+    font-size: 15px;
+  }
+  .ganreBtn {
+    width: auto;
+    height: auto;
+  }
+  .cardInProgressBookItemActive {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .inProgressInfo {
+    padding: 10px;
+  }
+  .cardBookInProgresName {
+    font-size: 30px;
+  }
+  .main_img {
+    width: 200px;
+    height: auto;
+    padding-top: 30px;
+  }
+  .shereByСomb {
+    font-size: 15px;
+    padding: 5px;
+    padding-top: 80px;
+  }
+}
+
+.bookRend {
+  width: 1500px;
+  display: flex;
+  flex-flow: wrap;
+  gap: 50px;
+}

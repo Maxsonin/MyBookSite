@@ -1,0 +1,6 @@
+.bookRend {
+  width: 1500px;
+  display: flex;
+  flex-flow: wrap;
+  gap: 50px;
+}

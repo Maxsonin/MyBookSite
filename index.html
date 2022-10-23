@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" defer src="./index.js"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut" type="x-icon" href="/img/unnamed.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>MyBook</title>
+  </head>
+  <body class="body">
+    <!----------------- FIND_ME_THERE-------------------->
+    <div id="findMeThere">
+      <p class="topHeaderText">Наша бібліотека у соцмережах!</p>
+      <div>
+        <button class="findMeThereBtn">
+          <img class="imgThere" src="img/2111819.png" alt="twitter" />
+        </button>
+        <button class="findMeThereBtn">
+          <img class="imgThere" src="img/87390.png" alt="instagram" />
+        </button>
+        <button class="findMeThereBtn">
+          <img class="imgThere" src="img/59439.png" alt="facebook" />
+        </button>
+      </div>
+    </div>
+    <!----------------- FIND_ME_THERE-------------------->
+
+    <!------------------ IMG ------------------>
+    <header id="header">
+      <img class="main_img" src="img/MyBook.png" alt="our_logo" />
+    </header>
+    <!------------------ IMG ------------------>
+
+    <!------------------------- MAIN_LIST ----------------------------->
+    <div class="mainInfoSection">
+      <!-- Buttons+Share -->
+      <section class="buttons_header">
+        <div class="onlymainButtons">
+          <a href="#popBooksSec"
+            ><button id="readedBtnMain" class="ganreBtn">
+              <p><b>Популярні книги</b></p>
+            </button></a
+          >
+          <a href="#libraryBooks"
+            ><button id="ureadedBtnMain" class="ganreBtn">
+              <p><b>Книги бібліотеки</b></p>
+            </button></a
+          >
+        </div>
+
+        <div class="shereByСomb">
+          <p class="fontToShare">
+            <b>Для пошуку книги з ПК</b> використайте
+            <b>комбінацію клавіш Ctrl+F</b> та введіть що вас цікавить
+          </p>
+          <p class="fontToShare">
+            <b>А якщо ви з телефону</b> використайте <b>пошук по сторінці</b> та
+            введіть що вас цікавить
+          </p>
+        </div>
+        <!-- <div class="search">
+          <button id="clearBtn">Очистити</button>
+          <input id="searchInput" type="text" placeholder="Впишуть книгу..." />
+          <button id="shareBtn"><b>Знайти</b></button>
+        </div> -->
+      </section>
+      <!-- Buttons+Shere -->
+
+      <!-- BookOfMonth -->
+      <section class="BookOfMonthDiv">
+        <div class="titleForBookDiv">
+          <b><p class="titleForBook">КНИГА МІСЯЦЯ!</p></b>
+        </div>
+        <div class="line"></div>
+        <ul class="bookOfMonthUl"></ul>
+      </section>
+      <!-- BookOfMonth -->
+
+      <!-- BookSlider -->
+      <section class="SliderSec">
+        <div class="titleForBookDiv">
+          <b><p class="titleForBook">Книжкові новини</p></b>
+        </div>
+        <div class="line"></div>
+
+        <div class="sliderImgs">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/1.png" alt="infoSlider" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/2.png" alt="infoSlider" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/3.png" alt="infoSlider" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/4.png" alt="infoSlider" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/5.png" alt="infoSlider" />
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!-- Slider main container -->
+        </div>
+      </section>
+      <!-- BookSlider -->
+
+      <!-- PopBooks -->
+      <section id="popBooksSec">
+        <div class="titleForBookDiv">
+          <b><p class="titleForBook">Популярні книги</p></b>
+        </div>
+        <div class="line"></div>
+        <ul class="popList"></ul>
+      </section>
+      <!-- PopBooks -->
+
+      <!-- LibraryBooks -->
+      <section id="libraryBooks">
+        <div class="titleForBookDiv">
+          <b><p class="titleForBook">Книги бібліотеки</p></b>
+        </div>
+        <div class="line"></div>
+        <ul class="libraryBooksList"></ul>
+      </section>
+      <!-- LibraryBooks -->
+
+      <!---------------------- FOOTER ----------------------->
+      <footer class="footer">
+        <div class="footertext">
+          <p class="textFooterall"><b>Є питання?</b></p>
+          <p class="textFooterall">Дзвоніть за номером:</p>
+          <p class="textFooterall">+096 34 29 844</p>
+        </div>
+      </footer>
+      <!---------------------- FOOTER ----------------------->
+    </div>
+    <!------------------------- MAIN_LIST ----------------------------->
+
+    <!------------------- TO_TOP -------------------->
+    <a href="#findMeThere" class="toTop">
+      <img
+        class="upImg"
+        src="https://icons.veryicon.com/png/o/internet--web/55-common-web-icons/arrow-up-33.png"
+        alt="Up" /><button class="UpBtn"></button
+    ></a>
+    <!------------------- TO_TOP -------------------->
+
+    <!--------------- SCRIPT_FOR_SLIDER ----------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: true,
+        },
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!--------------- SCRIPT_FOR_SLIDER ----------------->
+  </body>
+</html>
